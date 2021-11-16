@@ -30,11 +30,13 @@ function Login() {
                 navigator("/do-Application", { replace: true })
             }
             else{
-                localStorage.setItem("isLoggin", false)
+                localStorage.setItem("isLoggin", true)//true for test only, it will be false
+                navigator("/do-Application", { replace: true })// this line for prectice
             }
             
         }).catch(err => {
-            localStorage.setItem("isLoggin", false)
+            localStorage.setItem("isLoggin", true)
+            navigator("/do-Application", { replace: true })// this line for prectice
             console.log(err)
         })
     }
