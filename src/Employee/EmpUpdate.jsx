@@ -15,7 +15,7 @@ function EmpUpdate() {
 
         }
         else{
-            axios.get("http://localhost:9092/hr/empApi/"+id).then(res=>{
+            axios.get("http://localhost:9092/hr/api/emp/"+id).then(res=>{
                 setEmp(res.data)
 
             })
@@ -26,7 +26,7 @@ function EmpUpdate() {
         e.preventDefault();
         console.log(emp)
 
-        axios.put("http://localhost:9092/hr/empApi/"+id, emp).then(res => {
+        axios.put("http://localhost:9092/hr/api/emp/"+id, emp).then(res => {
             console.log(res);
             navigator("/emp-list", { replace: true });
         }).catch(err => {

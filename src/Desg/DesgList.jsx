@@ -6,7 +6,7 @@ function DesgList() {
     const [ desgs, setDesgs ] = useState([])
 
     useEffect(()=>{
-        axios.get("http://localhost:9092/hr/desgApi/list/")
+        axios.get("http://localhost:9092/hr/api/desg/list/")
        .then(
            (e)=>{
                

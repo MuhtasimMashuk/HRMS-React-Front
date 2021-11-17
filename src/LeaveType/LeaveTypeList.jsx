@@ -11,7 +11,7 @@ function LeaveTypeList() {
     const navigate=useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:9092/leave/leaveTypeApi/list/").then(res=>{ setTypes(res.data); console.log(res.data) })
+        axios.get("http://localhost:9092/leave/api/leave-type/list/").then(res=>{ setTypes(res.data); console.log(res.data) })
       
     }, [])
 

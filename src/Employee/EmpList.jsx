@@ -12,7 +12,7 @@ const EmpList =() =>{
     const navigator = useNavigate()
 
     useEffect(()=>{
-        axios.get("http://localhost:9092/hr/empApi/list/")
+        axios.get("http://localhost:9092/hr/api/emp/list/")
        .then(
            (e)=>{
                
@@ -36,7 +36,7 @@ const EmpList =() =>{
 
     const onDelete = (id) => {
        
-            axios.delete("http://localhost:9092/hr/empApi/"+id).then(res=>{setEmployees(employees.filter(emp=>emp.id!=id))})
+            axios.delete("http://localhost:9092/hr/api/emp/"+id).then(res=>{setEmployees(employees.filter(emp=>emp.id!=id))})
    
    
         

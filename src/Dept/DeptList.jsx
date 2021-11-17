@@ -11,7 +11,7 @@ function DeptList() {
  
     useEffect(()=>{
         
-        axios.get("http://localhost:9092/hr/deptApi/list/")
+        axios.get("http://localhost:9092/hr/api/dept/list/")
        .then(
            (e)=>{
                
@@ -25,7 +25,7 @@ function DeptList() {
 
      
     function deleteDep(id){
-       axios.delete("http://localhost:9092/hr/deptApi/"+id).then( e=> {setDepts( depts.filter(department => department.id !== id))})
+       axios.delete("http://localhost:9092/hr/api/dept/"+id).then( e=> {setDepts( depts.filter(department => department.id !== id))})
 
     }
    
@@ -43,7 +43,7 @@ function DeptList() {
     const onDelete = (id) => {
 
        
-        axios.delete("http://localhost:9092/hr/deptApi/"+id).then( e=> {setDepts( depts.filter(department => department.id !== id))})
+        axios.delete("http://localhost:9092/hr/api/dept/"+id).then( e=> {setDepts( depts.filter(department => department.id !== id))})
    
    
         

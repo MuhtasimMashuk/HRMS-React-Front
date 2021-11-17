@@ -97,7 +97,7 @@ const Dashboard = () => {
 
 
 
-            <div style={{ marginTop: "100px", marginBottom: "50px" }}>
+            <div style={{ marginTop: "150px", marginBottom: "50px" }}>
                 <Outlet />
             </div>
 

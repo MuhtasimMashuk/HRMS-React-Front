@@ -18,7 +18,7 @@ function EmpCreate() {
      e.preventDefault();
     console.log(emp)
 
-        axios.post("http://localhost:9092/hr/empApi/",emp).then(res=> {
+        axios.post("http://localhost:9092/hr/api/emp/",emp).then(res=> {
             console.log(res)
             navigator("/emp-list", { replace: true })
         }).catch(err=> {

@@ -11,7 +11,7 @@ function DeptUpdate() {
 
     const upDepartment = (e) => {
         e.preventDefault();
-        axios.put("http://localhost:9092/hr/deptApi/" + id, obj).then( res=>{
+        axios.put("http://localhost:9092/hr/api/dept/" + id, obj).then( res=>{
             console.log('department => ' + JSON.stringify(obj));
             navigate("/dep-list",{replace:true});
 
@@ -32,7 +32,7 @@ navigate("/dep-list",{replace:true});
     useEffect(
         () => {
            
-            axios.get("http://localhost:9092/hr/deptApi/" + id).then(res =>{setObj(res.data);
+            axios.get("http://localhost:9092/hr/api/dept/" + id).then(res =>{setObj(res.data);
             console.log(res.data);
             })
                 

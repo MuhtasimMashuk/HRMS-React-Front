@@ -11,7 +11,7 @@ function DesgCreate() {
 const onSave=(e)=>{
 e.preventDefault()
      
-       axios.post("http://localhost:9092/hr/desgApi/",desg).then(res=>{
+       axios.post("http://localhost:9092/hr/api/desg/",desg).then(res=>{
            navigate("/Desg-list",{replace:true});
 
        }

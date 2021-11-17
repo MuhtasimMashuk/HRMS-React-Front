@@ -11,7 +11,7 @@ function LeaveAppList() {
     const navigate=useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:9092/leave/leaveAppApi/all/list/").then(res=>{ setApplications(res.data); console.log(res.data) })
+        axios.get("http://localhost:9092/leave/leave-app/list/").then(res=>{ setApplications(res.data); console.log(res.data) })
       
     }, [])
 

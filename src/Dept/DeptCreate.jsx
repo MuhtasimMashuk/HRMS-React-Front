@@ -14,7 +14,7 @@ function DeptCreate() {
    const addDepartment= (e)=>{
         e.preventDefault();
    
-       axios.post("http://localhost:9092/hr/deptApi/",obj).then( res=>{
+       axios.post("http://localhost:9092/hr/api/dept/",obj).then( res=>{
         console.log('department => ' + JSON.stringify(obj));
         navigate("/dep-list");
        }

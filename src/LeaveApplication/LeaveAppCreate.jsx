@@ -38,7 +38,7 @@ function LeaveAppCreate() {
      e.preventDefault();
     console.log(apply)
 
-        axios.post("http://localhost:9092/leave/leaveAppApi/create/",apply).then(res=> {
+        axios.post("http://localhost:9092/leave/api/leave-app/",apply).then(res=> {
             console.log(res)
             navigator("/app-list", { replace: true })
         }).catch(err=> {
